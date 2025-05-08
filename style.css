@@ -1,24 +1,37 @@
-body {
-  font-family: system-ui, sans-serif;
-  background-color: #fff;
-  color: #333;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Make body take full height and use flex layout */
+/* Ensure full height and flex layout */
 html, body {
   height: 100%;
   margin: 0;
-  padding: 40px;
+  padding: 0;
   display: flex;
   flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
 }
 
-/* Let main content grow and push footer down */
+/* Add spacing around main content */
 main {
   flex: 1;
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header adjustments */
+header {
+  padding: 20px;
+  text-align: right;
+  background: transparent;
+}
+
+/* Navigation links */
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
 }
 
 /* Footer styling */
@@ -31,58 +44,33 @@ footer {
   border-top: 1px solid #eee;
 }
 
-
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 0.25em;
+/* Make icons consistent */
+.social-icons {
+  margin-top: 10px;
 }
-
-h2 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #555;
-  margin-top: 0;
-  margin-bottom: 2em;
-}
-
-h3 {
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0.5em;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5em;
-}
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 2em;
-}
-
-.nav-links a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #444;
-  font-size: 0.95rem;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
-}
-
-.icons a {
-  margin-right: 15px;
-  font-size: 1.5rem;
+.social-icons a {
+  margin-right: 10px;
+  font-size: 24px;
   color: #333;
-  text-decoration: none;
 }
 
-.icons a:hover {
-  color: #0077b5; /* LinkedIn Blue */
+/* Responsive behavior */
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px 10px 0 10px;
+  }
+
+  main {
+    padding: 30px 15px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 15px;
+  }
 }
