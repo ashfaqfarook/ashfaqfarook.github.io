@@ -1,0 +1,88 @@
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #fff;
+  color: #333;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Make body take full height and use flex layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Let main content grow and push footer down */
+main {
+  flex: 1;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #777;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2em;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.icons a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: #0077b5; /* LinkedIn Blue */
+}
