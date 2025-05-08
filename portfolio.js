@@ -13,3 +13,21 @@ function validateEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".accordion-button");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const content = button.nextElementSibling;
+
+      // Toggle visibility
+      const isVisible = content.style.display === "block";
+      document.querySelectorAll(".accordion-content").forEach((item) => {
+        item.style.display = "none"; // Close all
+      });
+
+      content.style.display = isVisible ? "none" : "block"; // Toggle current
+    });
+  });
+});
