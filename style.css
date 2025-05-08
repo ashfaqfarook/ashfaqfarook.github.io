@@ -173,17 +173,17 @@ textarea {
 }
 
 .accordion-button {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  text-align: left;
-  border: none;
-  background-color: #f2f2f2;
-  cursor: pointer;
+  background: none; /* Removes the button background */
+  border: none; /* Removes the border */
+  color: #0066cc; /* Matches the hyperlink color */
+  font-size: 16px; /* Adjusts the font size */
+  text-align: left; /* Aligns text to the left */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  padding: 0; /* Removes padding */
 }
 
 .accordion-button:hover {
-  background-color: #e0e0e0;
+  text-decoration: underline; /* Adds underline on hover */
 }
 
 .accordion-content {
